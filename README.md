@@ -1,1 +1,0 @@
-# CGI-Session-Driver-aggregator
