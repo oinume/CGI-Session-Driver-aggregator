@@ -7,7 +7,7 @@ use Carp qw(croak);
 use CGI::Session::Driver;
 
 @CGI::Session::Driver::aggregator::ISA = ( "CGI::Session::Driver" );
-$CGI::Session::Driver::aggregator::VERSION = "0.03";
+$CGI::Session::Driver::aggregator::VERSION = "0.04";
 
 sub drivers {
     my $self = shift;

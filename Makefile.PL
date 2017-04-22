@@ -11,7 +11,7 @@ WriteMakefile(
     VERSION_FROM    => 'lib/CGI/Session/Driver/aggregator.pm',
     PREREQ_PM       => {
         'CGI::Session'       => 4.00,
-        'Test::More'         => undef,
+        'Test::More'         => 0,
     },
     ABSTRACT        => 'Persistent session data in CGI applications',
     AUTHOR          => 'Kazuhiro Oinuma <oinume@cpan.org>',

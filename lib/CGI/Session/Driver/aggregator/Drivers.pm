@@ -33,7 +33,7 @@ sub add {
     $name = lc $name;
 
     my $package = "CGI::Session::Driver::$name";
-    if (!defined defined ${"${name}::VERSION"} || !defined @{"${name}::ISA"}) {
+    if (!exists $INC{$package}) {
         eval "require $package";
         if ($@) {
             croak "Failed to load a driver: $@";
